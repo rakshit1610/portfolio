@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather+Sans:wght@400;700;800&family=Quicksand:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'lato';
+}
+body{
+    background: #fff5db; 
+    /* e3edf7 */
+}
+p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: black; 
+    /* #555 */
+    /* color: e8491d; */
+}
+
+.main_container{
+    position: relative
+}
+
+.navbar{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute   
+}
+
+
+.navbar_items ul{
+    display: flex;
+}
+
+.logo a{
+    font-family: 'Quicksand';
+    font-size: 28px;
+    color: black;
+}
+
+.navbar_items ul li{
+    text-transform: uppercase;
+    margin: 0px 10px;
+}
+
+li a{
+    color: black;
+    font-weight: 600;
+}
+
+.banner_image{
+background: url(../images/cover2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.banner_content h1{
+    text-align: center;
+    color: #c20e11;
+    line-height: 38px;
+    margin-bottom: 15px;
+}
+
+.banner_content p{
+    font-size: 25px;
+}
+
+.about_content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1.title{
+    margin-bottom: 20px;
+    color:#c20e11;
+    font-size: 38px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+.myimg {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+    margin: 0 5% 0 2.5%;
+    
+}
+
+.about_content p{
+    font-size: 25px;
+    text-align: justify;
+    margin: 0 2.5% 0 5%;
+    
+}
+
+.skills, .about{
+    padding: 5%, 10%;
+    text-align:center;
+}
+
+.diff_skills{
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+
+.diff_skills_items{
+    width: 30%;
+    margin-bottom: 25px;
+}
+
+.diff_skills_items img{
+    width: 65%;
+    height: auto;
+    margin-bottom: 25px;
+    
+} 
+
+/* .diff_skills_items:hover img{
+    transform: scale(1.1);
+} */
+
+.diff_skills_items h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.wrapper_items{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ .wrapper_items img{
+    margin-bottom: 15px;
+    border-radius: 4%;
+    color: black;
+    box-shadow: 5px 10px 1em;
+} 
+
+.wrapper_items img:hover{
+    transform: scale(1.1);
+}
+
+.wrapper_items p{
+    font-size: 25px;
+} 
+
+
