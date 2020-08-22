@@ -9,15 +9,13 @@
     font-family: 'lato';
 }
 body{
-    background: #fff5db; 
-    /* e3edf7 */
+    background: #f1f1f1; 
 }
 p{
     margin-bottom: 15px;
     font-size: 14px;
     color: black; 
-    /* #555 */
-    /* color: e8491d; */
+
 }
 
 .main_container{
@@ -32,6 +30,13 @@ p{
     align-items: center;
     position: absolute   
 }
+
+.navbar{
+background: url(../images/crop.png);
+position: fixed;
+top: 0;
+width: 100%;
+}                    
 
 
 .navbar_items ul{
@@ -52,7 +57,15 @@ p{
 li a{
     color: black;
     font-weight: 600;
+    font-size: 20px;
 }
+
+li a:hover{
+    color: #1d05fa;
+    font-weight: 800;
+}
+
+
 
 .banner_image{
 background: url(../images/cover2.jpg);
@@ -67,14 +80,31 @@ justify-content: center;
 
 .banner_content h1{
     text-align: center;
-    color: #c20e11;
+    color: #1d05fa;
     line-height: 38px;
     margin-bottom: 15px;
 }
 
 .banner_content p{
     font-size: 25px;
+    animation: type 3s steps(19);
+    overflow: hidden;
+    white-space: nowrap;
+    animation-iteration-count: infinite;
+
 }
+
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 19ch;
+    }
+}
+
+
+
 
 .about_content{
     display: flex;
@@ -83,9 +113,10 @@ justify-content: center;
     justify-content: space-around;
 }
 
-h1.title{
-    margin-bottom: 20px;
-    color:#c20e11;
+.skills h1{
+    margin-top: 0px;
+    margin-bottom: 55px;
+    color: #1d05fa;
     font-size: 38px;
     letter-spacing: 5px;
     text-align: center;
@@ -93,20 +124,40 @@ h1.title{
     
 }
 
+.about h1{margin-top: 95px;
+margin-bottom: 20px;
+color:#1d05fa;
+font-size: 38px;
+letter-spacing: 5px;
+text-align: center;
+padding-top: 20px;
+}
+
+.projects h1{
+margin-bottom: 20px;
+color:#1d05fa;
+font-size: 38px;
+letter-spacing: 5px;
+text-align: center;
+padding-top: 20px;
+}
+
 .myimg {
     height: 300px;
     width: auto;
     border-radius: 50%;
-    margin: 0 5% 0 2.5%;
-    
+    margin: 0 5% 0 5%;
+    margin-bottom: 15px;
 }
 
 .about_content p{
     font-size: 25px;
     text-align: justify;
-    margin: 0 2.5% 0 5%;
+    margin: 0 5% 0 5%;
     
 }
+
+
 
 .skills, .about{
     padding: 5%, 10%;
@@ -131,14 +182,16 @@ h1.title{
     
 } 
 
-/* .diff_skills_items:hover img{
-    transform: scale(1.1);
-} */
+.diff_skills_items:hover img{
+    transform: scale(1.2);
+}
 
 .diff_skills_items h3{
     margin-bottom: 15px;
     font-size: 20px;
 }
+
+
 
 .wrapper_items{
     display: flex;
@@ -149,18 +202,131 @@ h1.title{
 
 
  .wrapper_items img{
+     width: 200px;
+     height: auto;
     margin-bottom: 15px;
     border-radius: 4%;
-    color: black;
-    box-shadow: 5px 10px 1em;
+    /* color: grey; */
+    box-shadow: 0px 0px 18px 0 #808080;
 } 
 
 .wrapper_items img:hover{
-    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 0 #808080;
 }
 
 .wrapper_items p{
     font-size: 25px;
 } 
+
+
+
+.social-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-menu ul li {
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #1d05fa;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #0077B5;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: rgb(238, 77, 14);
+}
+
+
+
+footer{
+    background: url(../images/crop.png);
+    padding: 15px 0 15px 0;
+  }
+  
+  .social-menu h3{
+      text-align: center;
+      padding-bottom: 15px;
+  }
+
+
+  
+  h4{
+    text-align: center;
+    padding-top: 30px;
+  }
+
+
+@media (max-width: 760px){
+    .navbar{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo{
+        margin-bottom: 25px;
+    }
+
+    .about_content{
+        flex-direction: column;
+    }
+
+    .navbar{
+        position: absolute;
+    }
+    
+    .diff_skills{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 300px){
+    .myimg{
+        width: 75%;
+        height: auto;
+    }
+
+    .about_content p{
+        text-align: center;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
 
 
