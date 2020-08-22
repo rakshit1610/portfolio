@@ -87,7 +87,7 @@ justify-content: center;
 
 .banner_content p{
     font-size: 25px;
-    animation: type 3s steps(19);
+    animation: type 3s steps(18);
     overflow: hidden;
     white-space: nowrap;
     animation-iteration-count: infinite;
@@ -99,7 +99,7 @@ justify-content: center;
         width: 0ch;
     }
     100%{
-        width: 19ch;
+        width: 18ch;
     }
 }
 
